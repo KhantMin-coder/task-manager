@@ -1,8 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Medal } from "lucide-react";
 import { Poppins } from "next/font/google";
-import React from "react";
+import Link from "next/link";
 
 const textFont = Poppins({
   subsets: ["latin"],
@@ -31,9 +29,12 @@ const Marketing = () => {
         offices or remote home environments, their workflow is distinctive and
         requires tailored solutions.
       </div>
-      <Button className="mt-6" size="lg" variant="default">
+      <Link
+        href="/sign-up"
+        className="mt-6 bg-sky-700 text-primary-foreground hover:bg-sky-700/80 p-3 border:md"
+      >
         Start Creating
-      </Button>
+      </Link>
     </div>
   );
 };
